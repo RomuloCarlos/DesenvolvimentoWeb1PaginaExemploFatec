@@ -8,13 +8,14 @@
     <meta name="description" content="Aula comentários, metadados, listas e layout">
     <meta name="keywords" content="HTML, Comentários, Listas, Layouts, Elementos Semânticos">
     <meta name="author" content="Rômulo Oliveira">
+    <link rel="stylesheet" href="css/style.css">
     <title>Aula 5</title>
 </head>
 <body>
-    <header> <!--topo do pagina-->
-        <img src="imagem/FATEC_ZONA_LESTE.png" alt="Imagem com a palavra fatec em cinza e a expressão Zona Leste em Vermelho" title="Imagem com a palavra fatec em cinza e a expressão Zona Leste em Vermelho">
+    <header id="topo"> <!--topo do pagina-->
+        <section id="linhalogo"> <img  id="logo" src="imagem/FATEC_ZONA_LESTE.png" alt="Imagem com a palavra fatec em cinza e a expressão Zona Leste em Vermelho" title="Imagem com a palavra fatec em cinza e a expressão Zona Leste em Vermelho"></section>
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href ="index.html">Início</a></li>
                 <li><a href ="comentarios.html">Comentarios</a></li>
                 <li><a href ="metadados.html">Metadados</a></li>
@@ -31,9 +32,10 @@
     </header>
     <main> <!--conteudo principal da pagina-->
         <h1>Metadados</h1>
-       <p>Metadados são dados externos à página que são usados ​​pelos navegadores (como exibir conteúdo), pelos mecanismos de pesquisa (palavras-chave) e outros serviços da web;</p>
-       <img src="imagem/metadados.png" alt="imagem com conteudo explicativo sobre metadados em HTML">
+        <section id="artigo"><p>Metadados são dados externos à página que são usados ​​pelos navegadores (como exibir conteúdo), pelos mecanismos de pesquisa (palavras-chave) e outros serviços da web;</p>
+       <img id="imagemcont" src="imagem/metadados.png" alt="imagem com conteudo explicativo sobre metadados em HTML">
+    </section>
     </main>
-    <footer><p>Desenvolvido por Romulo Oliveira &copy; 2021</p> </footer>
+    <footer id="rodape"><p>Desenvolvido por Romulo Oliveira &copy; 2021</p> </footer>
 </body>
 </html>

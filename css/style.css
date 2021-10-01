@@ -1,0 +1,155 @@
+*{
+	margin:0; padding:0;
+}
+body{
+background-color:#dec9c9;
+}
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    background-color:rgb(240, 248, 255);
+}
+#linhalogo{
+background-color:#9b324c;
+border: 1px solid black;
+}
+#topo{
+    padding: 0px 10px;
+}
+#nav{
+    height: auto;
+    float: left;
+}
+#menu{
+    width: 100%;
+    list-style: none; /*Tira a bolinha do lado da lista */
+    border: 1px solid black;
+    float:left;
+    /*padding-left: 0%;*/
+    background-color:#5e71d2; 
+}
+#menu li{
+    position: relative;
+    float: left;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+#menu li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+#menu li a:hover{
+    background-color: #8989d3;
+    transition: 1s;
+}
+#menu li ul{
+    position: absolute;
+    top: 25px;
+    left:0;
+    background-color: #5e71d2;
+    display: none;
+    }
+
+#menu li:hover ul{
+    display:block;
+}
+#menu li ul li{
+    text-decoration: none;
+    list-style: none; /*Tira a bolinha do lado da lista */
+    border:1px solid #fff;
+    width: 150px;
+}
+#artigo{
+    padding: 1%;
+    width:70%;
+    min-height: 700px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: justify; 
+    margin: 100px auto 0 auto; /* Alinha o bloco_texto no centro da página e a 200px do topo */
+}
+
+#rodape{
+    width:100%;
+    height:50px;
+    background-color: navy;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+}
+h1{
+
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#imagemcont{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+input, select{
+    width:40%;
+    height: 30px;
+    background-color: #dacfc6b3;
+    color: #000;
+    border-radius: 15px;
+    margin-left:5px;
+    
+}
+
+label{
+    font-weight:bold;
+    font-size:1.0em;
+    margin-left:5px;
+    padding-bottom: 5%;
+}
+legend{
+    font-weight:bold;
+    font-size:1.1em;
+    margin-left:5px;  
+    color:#9b324c ;
+    padding-bottom: 1.5%;
+}
+
+fieldset{
+    border-color:#9b324c;
+    padding-bottom: 5%;
+    border-radius: 15px;
+}
+
+textarea{
+    width:40%;
+    background-color: #dacfc6b3;
+    color: #000;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left:5px;
+}
+input[type=submit]{
+    width:15%;
+    height: 40;
+    background-color:#5E71D2;
+    color:#FFF;
+    font-weight:bold;
+}
+input[type=reset]{
+    width:15%;
+    height: 40;
+    background-color:#5E71D2;
+    color:#FFF;
+    font-weight:bold;
+}
+
+.required:after{
+    content:"*";
+    color:red;
+}

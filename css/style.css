@@ -213,7 +213,35 @@ color:#3e3e3e;
 }
 #pgacess{
     padding-left:25%;
+    
 }
 .contraste, .fonte{
     padding-left: 5px;
+}
+
+#breadcrumb{
+    padding-left: 2%;
+    display: block;
+    padding-top: 5%;
+    list-style:none;
+}
+#breadcrumb li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: black;
+}
+#breadcrumb li a {
+    color:darkgrey;
+    text-decoration: none;
+}
+#breadcrumb li+li:before {
+content:"/\00a0";
+padding:6px;
+color:#000;
+}
+
+#breadcrumb li a:hover{
+    color:#000;
+    text-decoration: underline;
 }
